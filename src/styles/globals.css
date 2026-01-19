@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "./colors.css";
+@import "tw-animate-css";
+
+@utility grid-cols-auto {
+  grid-template-columns: repeat(
+    var(--auto-track, auto-fill),
+    minmax(min(100%, var(--min-column-size, 15rem)), 1fr)
+  );
+}
+
+@utility auto-fill {
+  --auto-track: auto-fill;
+}
+
+@utility auto-fit {
+  --auto-track: auto-fit;
+}
+
+@utility auto-size-* {
+  --min-column-size: --spacing(--value(integer));
+  --min-column-size: --value([length]);
+  --min-column-size: --value(--container-*);
+}

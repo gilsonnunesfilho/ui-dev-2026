@@ -1,0 +1,47 @@
+@theme {
+  /* ------------------- Disable original TailwindCSS colors ------------------ */
+  --color-*: initial;
+
+  /* --------------------------------- Tokens --------------------------------- */
+  --color-orange-500: #ff6002;
+  --color-blue-500: #0b0378;
+  --color-yellow-500: #ffce33;
+  --color-purple-500: #bc0067;
+  --color-white-100: #ffffff;
+  --color-gray-500: #4b4b4b;
+  --color-gray-400: #757575;
+  --color-gray-300: #d9d9d9;
+  --color-gray-200: #f5f5f5;
+  --color-gray-100: #fafafa;
+
+  /* ----------------------------- Semantic colors ---------------------------- */
+  --color-label-primary: var(--color-gray-500);
+  --color-label-secondary: var(--color-gray-400);
+  --color-label-tertiary: color-mix(
+    in oklab,
+    var(--color-gray-400),
+    transparent 30%
+  );
+
+  --color-background-primary: var(--color-white-100);
+  --color-background-secondary: var(--color-gray-100);
+
+  --color-fill-primary: var(--color-gray-300);
+  --color-fill-secondary: color-mix(
+    in oklab,
+    var(--color-gray-300),
+    transparent 30%
+  );
+
+  --color-brand: var(--color-orange-500);
+  --color-brand-foreground: var(--color-white-100);
+
+  --color-accent: var(--color-blue-500);
+  --color-accent-foreground: var(--color-white-100);
+
+  --color-destructive: var(--color-purple-500);
+  --color-destructive-foreground: var(--color-white-100);
+
+  --color-alert: var(--color-yellow-500);
+  --color-alert-foreground: var(--color-gray-500);
+}
