@@ -70,7 +70,7 @@ src/
 │   ├── about/              # Challenge information
 │   └── docs/               # Design system documentation
 │       ├── design-system/  # Color tokens & usage
-│       └── components/     # Component showcase
+│       └── demo/           # Component showcase
 ├── components/
 │   ├── layout/             # Layout primitives (Container, VStack, Grid, etc.)
 │   └── ui/                 # UI components (Button, Form, Dialog, etc.)
@@ -155,7 +155,7 @@ This project prioritizes accessibility throughout:
 | `/register`           | Candidate registration form                       |
 | `/about`              | Challenge requirements and implementation details |
 | `/docs/design-system` | Design token documentation                        |
-| `/docs/components`    | Interactive component showcase                    |
+| `/docs/demo`    | Interactive component showcase                    |
 
 ## License
 

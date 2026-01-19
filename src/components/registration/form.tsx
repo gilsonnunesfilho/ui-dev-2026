@@ -32,6 +32,7 @@ type FieldConfig = {
   inputProps: RequiredFieldProps;
 };
 
+/** Configuration for registration form fields including labels and input properties */
 const REGISTRATION_FIELDS: FieldConfig[] = [
   {
     label: "First Name",
@@ -82,6 +83,10 @@ type ActionState = {
   info: RegistrationFormData;
 } | null;
 
+/**
+ * Server action that validates and processes form data
+ * Simulates a 3-second delay before returning validated registration info
+ */
 async function register(
   _: ActionState,
   formData: FormData,
@@ -96,6 +101,9 @@ async function register(
   };
 }
 
+/**
+ * Multi-step registration form component that handles loading, submission, and confirmation states
+ */
 export function RegistrationForm() {
   const [state, formAction, isPending] = useActionState(register, null);
 
