@@ -3,7 +3,7 @@
 
 A modern candidate registration application built with **Next.js 16**, **React 19**, and **Tailwind CSS v4**. This project demonstrates advanced front-end development practices including semantic design tokens, accessibility-first architecture, and React Server Components.
 
-![Design System Preview](screenshots/design-system.png)
+![Wireframe Preview](wireframe.avif)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
