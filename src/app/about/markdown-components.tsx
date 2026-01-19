@@ -43,13 +43,17 @@ export const markdownComponents: Components = {
   a: ({ node, ...props }) => (
     <a className="text-brand underline hover:no-underline" {...props} />
   ),
-  img: ({ node, ...props }) => (
-    <img
-      className="w-full rounded-lg border border-fill-secondary my-6"
-      alt=""
-      {...props}
-    />
-  ),
+  img: ({ alt = "", src, ...props }) => {
+    // biome-ignore lint/performance/noImgElement: markdown images aren't known at build time
+    return (
+      <img
+        alt={alt}
+        src={src}
+        className="w-full rounded-lg border border-fill-secondary my-6"
+        {...props}
+      />
+    );
+  },
   code: ({ node, ...props }) => (
     <code
       className="bg-fill-secondary text-label-primary px-2 py-1 rounded text-sm font-mono"
