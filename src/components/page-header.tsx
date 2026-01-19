@@ -1,5 +1,6 @@
 import { Slot } from "radix-ui";
 import { cn } from "@/lib/utils";
+import { VStack } from "./layout";
 
 type PageHeaderProps = React.ComponentProps<"hgroup"> & {
   asChild?: boolean;
@@ -8,9 +9,11 @@ type PageHeaderProps = React.ComponentProps<"hgroup"> & {
 export function PageHeader({ asChild, className, ...props }: PageHeaderProps) {
   const Comp = asChild ? Slot.Root : "hgroup";
   return (
-    <Comp
-      className={cn("py-5 border-b border-fill-secondary", className)}
-      {...props}
-    />
+    <VStack asChild>
+      <Comp
+        className={cn("py-5 border-b border-fill-secondary", className)}
+        {...props}
+      />
+    </VStack>
   );
 }

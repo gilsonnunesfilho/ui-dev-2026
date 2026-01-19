@@ -303,45 +303,6 @@ function TailwindUsageTable() {
   );
 }
 
-function DarkModeNotes() {
-  return (
-    <section
-      aria-labelledby="dark-mode-section"
-      className="rounded-lg border border-fill-secondary bg-background-secondary p-6"
-    >
-      <VStack className="gap-3">
-        <h2
-          id="dark-mode-section"
-          className="text-xl font-semibold text-label-primary"
-        >
-          Dark Mode Support
-        </h2>
-        <p className="text-sm text-label-secondary">
-          All semantic tokens automatically adapt to dark mode. The primitive
-          colors remain constant, while semantic tokens reference different
-          primitives based on the color scheme.
-        </p>
-        <div className="text-sm text-label-secondary">
-          <p className="font-medium text-label-primary">
-            Key differences in dark mode:
-          </p>
-          <ul className="mt-2 list-inside list-disc space-y-1">
-            <li>Label Primary → White 100</li>
-            <li>Label Secondary → Gray 200</li>
-            <li>Background Primary → Gray 500</li>
-            <li>Background Secondary → Gray 400</li>
-            <li>Fill Primary → Gray 400</li>
-            <li>
-              Destructive/Info colors use OKLCH color adjustments for better
-              contrast
-            </li>
-          </ul>
-        </div>
-      </VStack>
-    </section>
-  );
-}
-
 export default function DesignSystemPage() {
   return (
     <div className="pt-10 pb-20">
@@ -465,8 +426,6 @@ export default function DesignSystemPage() {
                   </section>
 
                   <TailwindUsageTable />
-
-                  <DarkModeNotes />
                 </main>
               </VStack>
             </WithSidebar.Content>

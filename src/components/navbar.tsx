@@ -127,9 +127,9 @@ export function Navbar() {
                     </Link>
                   </MenubarItem>
                   <MenubarItem asChild>
-                    <Link href="/docs/components">
+                    <Link href="/docs/demos">
                       <Blocks className="size-4 opacity-60" />
-                      Components
+                      Demos
                     </Link>
                   </MenubarItem>
                 </MenubarGroup>
