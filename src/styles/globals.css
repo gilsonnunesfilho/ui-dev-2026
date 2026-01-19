@@ -2,6 +2,15 @@
 @import "./colors.css";
 @import "tw-animate-css";
 
+@theme {
+  --animate-checkmark-ring-1: checkmark-ring-1 700ms ease-out both;
+  --animate-checkmark-ring-2: checkmark-ring-2 500ms ease-out 150ms both;
+  --animate-checkmark-circle: checkmark-circle 300ms ease-out 300ms both;
+  --animate-checkmark-icon: checkmark-icon 300ms ease-out 500ms both;
+  --animate-fade-slide-in: fade-slide-in 500ms ease-out both;
+  --animate-scale-in: scale-in 300ms ease-out both;
+}
+
 @utility grid-cols-auto {
   grid-template-columns: repeat(
     var(--auto-track, auto-fill),
@@ -21,4 +30,74 @@
   --min-column-size: --spacing(--value(integer));
   --min-column-size: --value([length]);
   --min-column-size: --value(--container-*);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes checkmark-ring-1 {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes checkmark-ring-2 {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes checkmark-circle {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes checkmark-icon {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
